@@ -1,5 +1,18 @@
 .container {
-    display: flex;
-    margin-top: 10px;
-    
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+.contenedor {
+  display: flex;
+  height: 100%;
+  padding-top: 50px;
+}
+.sidebar2 {
+  width: 100px;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
