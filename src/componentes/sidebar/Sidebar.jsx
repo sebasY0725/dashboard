@@ -1,39 +1,50 @@
-import "./sidebar.css"
-import HomeIcon from '@mui/icons-material/Home';
-import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
-import AddIcon from '@mui/icons-material/Add';
-import PersonSearchIcon from '@mui/icons-material/PersonSearch';
-import ManageSearchIcon from '@mui/icons-material/ManageSearch';
+import "./sidebar.css";
+import HomeIcon from "@mui/icons-material/Home";
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
+import AddIcon from "@mui/icons-material/Add";
+import PersonSearchIcon from "@mui/icons-material/PersonSearch";
+import ManageSearchIcon from "@mui/icons-material/ManageSearch";
+import { Link } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div className="sidebar">
-        <div className="sidebarWrapper">
-          <div className="sidebarMenu">
-            <h3 className="sidebarTittle">Dashboard</h3>
-            <ul className="sidebarList">
+      <div className="sidebarWrapper">
+        <div className="sidebarMenu">
+          <h3 className="sidebarTittle">Dashboard</h3>
+          <ul className="sidebarList">
+            <Link to="/">
               <li className="sidebarListItem ">
-              <HomeIcon/>
-              Inicio
+                <HomeIcon />
+                Inicio
               </li>
-               <li className="sidebarListItem ">
-              <PersonAddAltIcon/>
-              Añadir usuario
+            </Link>
+            <Link to="/newUser">
+              <li className="sidebarListItem ">
+                <PersonAddAltIcon />
+                Añadir Usuario
               </li>
-               <li className="sidebarListItem ">
-              <AddIcon/>
-              Añadir Area
+            </Link>
+            <Link to="/newArea">
+              <li className="sidebarListItem ">
+                <AddIcon />
+                Añadir Area
               </li>
-               <li className="sidebarListItem ">
-              <PersonSearchIcon/>
-              Buscar Empleado
+            </Link>
+            <Link to="/searchBarU">
+              <li className="sidebarListItem ">
+                <PersonSearchIcon />
+                Buscar Empleado
               </li>
-               <li className="sidebarListItem ">
-              <ManageSearchIcon/>
-              Buscar Area
+            </Link>
+            <Link to="/searchBarA">
+              <li className="sidebarListItem ">
+                <ManageSearchIcon />
+                Buscar Area
               </li>
-            </ul>
-          </div>
+            </Link>
+          </ul>
         </div>
+      </div>
     </div>
-  )
+  );
 }
