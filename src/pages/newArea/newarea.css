@@ -1,13 +1,13 @@
-.newUser{
-    flex :4;
+.newArea{
+    flex:4; 
 }
-
-.newUserForm{
+.newAreaForm {
     display: flex;
     flex-wrap: wrap;
 
 }
-.newItem{
+
+.newItem {
     width: 400px;
     display: flex;
     flex-direction: column;
@@ -15,20 +15,21 @@
     margin-right: 20px;
 }
 
-.newItem>label{
+.newItem>label {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 600;
     color: black;
 }
-.newItem>input{
+
+.newItem>input {
     height: 20px;
     padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-.Estate{
+.Estate {
     height: 40px;
     border-radius: 5px;
 }

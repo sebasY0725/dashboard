@@ -4,36 +4,36 @@ export default function newUser() {
   return (
     <div className="newUser">
         <h1 className="newUSerTittle">Nuevo usuario</h1>
-        <form className="newUserForm">
-            <div className="newUserItem">
+        <form className="newForm">
+            <div className="newItem">
                 <label>Nombres</label>
                 <input type="text" placeholder="Nombres" />
             </div>
-             <div className="newUserItem">
+             <div className="newItem">
                 <label>Apellidos</label>
                 <input type="text" placeholder="Apellidos" />
             </div>
-             <div className="newUserItem">
+             <div className="newItem">
                 <label>Fecha de nacimiento</label>
                 <input type="date" />
             </div>
-             <div className="newUserItem">
+             <div className="newItem">
                 <label>Email</label>
                 <input type="email" placeholder="email" />
             </div>
-            <div className="newUserItem">
+            <div className="newItem">
                 <label>Numero de docuemento</label>
                 <input type="number" placeholder="CC" />
             </div>
-               <div className="newUserItem">
+               <div className="newItem">
                 <label>Area </label>
                 <input type="number" placeholder="Area" />
             </div>
-               <div className="newUserItem">
+               <div className="newItem">
                 <label>Salario</label>
                 <input type="number" placeholder="salario" />
             </div>
-            <div className="newUserItem">
+            <div className="newItem">
                 <label>Estado</label>
                 <select className="Estate" name="active" id="active">
                     <option value="Activo">Activo</option>
@@ -41,7 +41,7 @@ export default function newUser() {
                 </select>
         
             </div>
-            <button className="newUserButton">Crear</button>
+            <button className="newButton">Crear</button>
            
             
         </form>

@@ -4,6 +4,7 @@ import NewUser from "./pages/newUser/NewUser";
 
 import "./app.css";
 import Home from "./pages/home/Home";
+import NewArea from "./pages/newArea/NewArea";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <div className="container">
         <Sidebar />
         {/* <Home /> */}
-        <NewUser />
+        {/*<NewUser />*/}
+        <NewArea /> {/* */}
       </div>
     </div>
   );
